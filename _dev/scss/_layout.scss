@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css?family=Rajdhani');
+//font-family: 'Rajdhani', sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Muli');
+//font-family: 'Muli', sans-serif;
+
+.header{
+  width: 100%;
+  height: get_vw(100);
+  border-bottom: dashed 1px gray;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  @media (min-width: 835px){
+    height: 80px;
+  }
+  .logo{
+    font-family: 'Muli', sans-serif;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+    height: get_vw(100);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    @include fz_vw(40);
+    @media (min-width: 835px){
+      height: 80px;
+      font-size: 30px;
+    }
+  }
+  nav{
+    display: none;
+    @media (min-width: 835px){
+      display: block;
+    }
+  }
+}
+
+.main{
+  height: 1000px;
+}

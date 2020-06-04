@@ -1,0 +1,15 @@
+$white: #fff;
+
+@function get_vw($size, $viewport: 750) {
+  $rate: 100 / $viewport;
+  @return $rate * $size * 1vw;
+}
+@mixin fz_vw($font_size: 10) {
+  font-size: $font_size * 1px;
+  font-size: get_vw($font_size);
+}
+//@include fz_vw(28);
+
+$img-path: "../images/";
+
+$z: aaa, bbb;
