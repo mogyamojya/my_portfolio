@@ -1,3 +1,3 @@
 import PageTop from './modules/pageTop';
 
-new PageTop('#pagetop', '.pagetop');
+new PageTop('.pagetop');
