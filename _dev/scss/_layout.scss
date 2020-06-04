@@ -5,7 +5,16 @@
 @import url('https://fonts.googleapis.com/css?family=Muli');
 //font-family: 'Muli', sans-serif;
 
+body{
+  font-family: 'Muli', sans-serif;
+  font-weight: normal;
+  letter-spacing: 0.1em;
+}
+img{
+  width: 100%;
+}
 .header{
+  $this: &;
   width: 100%;
   height: get_vw(100);
   border-bottom: dashed 1px gray;
@@ -14,6 +23,11 @@
   top: 0;
   @media (min-width: 835px){
     height: 80px;
+    #{$this}__wrap{
+      width: 1000px;
+      margin: 0 auto;
+      position: relative;
+    }
   }
   .logo{
     font-family: 'Muli', sans-serif;
@@ -24,19 +38,229 @@
     justify-content: center;
     align-items: center;
     @include fz_vw(40);
+    padding-left: get_vw(30);
     @media (min-width: 835px){
       height: 80px;
       font-size: 30px;
     }
   }
   nav{
-    display: none;
+    font-family: 'Muli', sans-serif;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+    //display: none;
+    border-top:  dashed 1px gray;
     @media (min-width: 835px){
-      display: block;
+      //display: block;
+      position: absolute;
+      top: 30px;
+      right: 0;
+      border: none;
+    }
+    ul{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom:  dashed 1px gray;
+      background: #fff;
+      @media (min-width: 835px){
+        border: none;
+      }
+      li{
+        width: 33.3333333333333%;
+        text-align: center;
+        border-left:  dashed 1px gray;
+        @media (min-width: 835px){
+          border: none;
+          margin: 0 20px;
+        }
+        &:first-of-type{
+          border: none;
+        }
+        a{
+          color: #000;
+          padding: get_vw(10) 0;
+          display: block;
+          @media (min-width: 835px){
+            padding: 0;
+            transition: all;
+          }
+        }
+      }
     }
   }
 }
 
 .main{
-  height: 1000px;
+  padding: get_vw(157) 0 0;
+  @media (min-width: 835px){
+    padding: 80px 0 0;
+    width: 1000px;
+    margin: 0 auto;
+  }
+}
+.kv{
+  background: gray;
+  width: 100%;
+  height: auto;
+  @media (min-width: 835px){
+    height: 300px;
+  }
+}
+.section{
+  h2{
+    text-align: center;
+    font-family: 'Muli', sans-serif;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+    @include fz_vw(36);
+    padding: get_vw(30) 0;
+    @media (min-width: 835px){
+      font-size: 24px;
+    }
+  }
+}
+.section1{
+  p{
+    @include fz_vw(28);
+    line-height: 1.5;
+    text-align: center;
+    padding: 0 get_vw(30);
+    &.profile{
+      @include fz_vw(24);
+      margin-top: get_vw(30);
+      strong{
+        font-weight: bold;
+      }
+    }
+  }
+  dl{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: top;
+    padding: 0 get_vw(30);
+    @media (min-width: 835px){
+      width: 500px;
+      margin: 0 auto;
+      padding: 0;
+    }
+    dt{
+      width: 40%;
+      box-sizing: border-box;
+      padding: 0 get_vw(10) get_vw(10) 0;
+      text-align: right;
+    }
+    dd{
+      width: 60%;
+      box-sizing: border-box;
+      padding: 0 0 get_vw(10);
+    }
+  }
+}
+.section2{
+  margin-top: get_vw(100);
+  text-align: center;
+  p{
+    margin: 0 get_vw(30);
+    line-height: 1.5;
+    @include fz_vw(28);
+    span{
+      @include fz_vw(24);
+    }
+  }
+  .img{
+    width: get_vw(690);
+    height: get_vw(200);
+    margin: 0 auto;
+    background: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+  .box{
+    margin-top: get_vw(60);
+    padding: 0 get_vw(30);
+    dl{
+      dt{
+        line-height: 1.5;
+        @include fz_vw(28);
+        margin: get_vw(5) 0 get_vw(20);
+      }
+      dd{
+        line-height: 1.5;
+        text-align: left;
+        @include fz_vw(24);
+      }
+    }
+    &.private{
+      dd{
+        text-align: center;
+      }
+      .img{
+        height: auto;
+        display: block;
+        border: 1px solid #ccc;
+      }
+    }
+    a{
+      color: lightblue;
+    }
+  }
+}
+.section3{
+  margin-top: get_vw(100);
+  padding-bottom: get_vw(200);
+  text-align: center;
+}
+
+.footer{
+  background: gray;
+  padding: get_vw(20) 0;
+  text-align: center;
+  .copyright{
+    color: #fff;
+    @include fz_vw(20);
+  }
+  .pagetop{
+    position: fixed;
+    right: get_vw(30);
+    bottom: get_vw(100);
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background: #ccc;
+    &:after{
+      content: "";
+      display: block;
+      width: 14px;
+      height: 14px;
+      border-top: 2px solid #fff;
+      border-left: 2px solid #fff;
+      position: absolute;
+      top: 20px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      transform: rotate(45deg);
+    }
+  }
+  .sns{
+    margin-bottom: get_vw(10);
+  }
+}
+
+
+.flowbtn10{
+display:inline-block;	
+font-size:35px;
+text-decoration:none;
+transition:.5s;
+color:#444;	
+}
+.flowbtn10 .fa-instagram{
+font-size:38px;
+}
+.flowbtn10 .fa-instagram:hover{
+color:#fff;
 }

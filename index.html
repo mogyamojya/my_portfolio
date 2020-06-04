@@ -6,15 +6,17 @@
     <meta http-equiv="Content-Style-Type" content="text/css">
     <meta http-equiv="Content-Script-Type" content="text/javascript">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+    <meta name="robots" content="noindex">
     <title>Portfolio / mogyamojya</title>
-    <meta name="keywords" content="mogyamojya,Portfolio,ポートフォリオ">
+    <!-- <meta name="keywords" content="mogyamojya,Portfolio,ポートフォリオ">
     <meta name="description" content="mogyamojyaのポートフォリオサイトです">
     <meta property="og:title" content="Portfolio / mogyamojya">
     <meta property="og:url" content="https://mogyamojya.github.io/my_portfolio/">
     <meta property="og:description" content="mogyamojyaのポートフォリオサイトです">
     <meta property="og:image" content="https://mogyamojya.github.io/my_portfolio/assets/images/ogimg.png">
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary_large_image"> -->
     <link rel="shortcut icon" href="./assets/images/favicon.ico">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <link rel="stylesheet" media="all" href="./assets/css/style.css">
   </head>
   <body>
@@ -23,36 +25,108 @@
         <h1 class="logo">my portfolio</h1>
         <nav>
           <ul>
-            <li><a href="">リンク1</a></li>
-            <li><a href="">リンク2</a></li>
-            <li><a href="">リンク3</a></li>
+            <li><a href="#section1">about</a></li>
+            <li><a href="#section2">works</a></li>
+            <li><a href="#section3">contact</a></li>
           </ul>
         </nav>
       </div>
     </header>
     <main class="main">
-      <div class="kv"></div>
-      <section class="section section1">
-        <h2 class="section1__title">タイトル</h2>
+      <div class="kv"><img src="./assets/images/kv.jpg"></div>
+      <section id="section1" class="section section1">
+        <h2 class="section1__title">about</h2>
+        <!-- <dl>
+          <dt>name</dt>
+          <dd>とだ あかね</dd>
+          <dt>すきなもの</dt>
+          <dd>絵を描くこと、散歩、甘いもの</dd>
+        </dl> -->
+        <p>はじめまして こんにちは<br>簡単ではありますが、こちらのページに<br>私のこれまで行ってきたことをまとめました</p>
+        <p class="profile">
+          <strong>Akane Toda</strong><br>
+          1985年生まれ<br>神奈川育ち 東京在住
+        </p>
       </section>
-      <section class="section section2">
-        <h2 class="section2__title">タイトル</h2>
-        <div class="box">内容</div>
+      <section id="section2" class="section section2">
+        <h2 class="section2__title">works</h2>
+        <p>直近に業務で関わっていたページ、<br>プライベートで制作したページを記載しています。<br><span>（プライベートで制作した方のものは<br>かなり古いですが参考までに…）</span></p>
+        <div class="box work">
+          <div class="img">1</div>
+          <dl>
+            <dt>某飲料メーカー製品ブランドサイト(水)<br>キャンペーンページ</dt>
+            <dd>
+              2020年4月制作<br>
+              制作期間:1週間ほど<br>
+              関係者：ディレクター1名、デザイナー1名、マークアップエンジニア1名、フロントエンドエンジニア1名<br>
+              <br>
+              6日間毎日更新コンテンツページのPCSPマークアップを担当しました。
+              テキスト変更やデザインの差し替え、ページ内で使われていたタレント都合により順番の入れ替えなど変更が頻繁に入ったため、公開前日ギリギリまで作業していた覚えがあります。<br>
+            </dd>
+          </dl>
+        </div>
+        <div class="box work">
+          <div class="img">2</div>
+          <dl>
+            <dt>某飲料メーカー製品ブランドサイト(お茶)<br>キャンペーンページ1</dt>
+            <dd>
+              2019年12月〜2020年4月制作<br>
+              制作期間:2ヶ月ほど<br>
+              関係者：ディレクター1名、デザイナー(外注)、マークアップエンジニア1名、フロントエンドエンジニア1名、システムエンジニア1名<br>
+              <br>
+              SP向けキャンペーンページのマークアップを担当しました。<br>
+              システムタグによる分岐や出力の多く入るページだったため、どういった情報が吐き出されて、マークアップとしてはどのように構築しておけばよいか何度もディレクターさんやシステム担当者の方と確認を行いつつ、作業を進めました。<br>
+            </dd>
+          </dl>
+        </div>
+        <div class="box work">
+          <div class="img">3</div>
+          <dl>
+            <dt>某飲料メーカー製品ブランドサイト(お茶)<br>キャンペーンページ2</dt>
+            <dd>
+              2019年12月〜2020年4月制作<br>
+              制作期間:2ヶ月ほど<br>
+              関係者：ディレクター1名、デザイナー(外注)、マークアップエンジニア1名、フロントエンドエンジニア1名、システムエンジニア1名<br>
+              <br>
+              こちらも上記と同じく、SP向けキャンペーンページのマークアップを担当しました。<br>
+              システムタグによる分岐や出力の多く入るページだったため、どういった情報が吐き出されて、マークアップとしてはどのように構築しておけばよいか何度もディレクターさんやシステム担当者の方と確認を行いつつ、作業を進めました。<br>
+            </dd>
+          </dl>
+        </div>
+        <div class="box private">
+          <div class="img"><img src="./assets/images/site_img1.png"></div>
+          <dl>
+            <dt>自転車屋さんのサイト(知り合いの勤務先)</dt>
+            <dd>
+              <a href="http://www.moto-akiyama.co.jp/" target="blank">http://www.moto-akiyama.co.jp/</a><br>
+              2015年制作
+            </dd>
+          </dl>
+        </div>
+        <div class="box private">
+          <div class="img"><img src="./assets/images/site_img2.png"></div>
+          <dl>
+            <dt>自身のイラストサイト</dt>
+            <dd>
+              <a href="http://www.mogyamojya.com/" target="blank">http://www.mogyamojya.com/</a><br>
+              2012年制作
+            </dd>
+          </dl>
+        </div>
       </section>
-      <section class="section section3">
-        <h2 class="section3__title">タイトル</h2>
-        <div class="box">内容</div>
+      <section id="section3" class="section section3">
+        <h2 class="section3__title">contact</h2>
+        <p>akane.toda.mogu@gmail.com</p>
       </section>
     </main>
     <footer class="footer">
-      <p class="pagetop"><a href="#pagetop">ページトップへ</a></p>
+      <p class="pagetop"><a href="#pagetop"></a></p>
       <div class="sns">
-        <p class="sns__title">タイトル</p>
         <ul>
-          <li><a href="https://www.instagram.com/mogyamojya/" target="_blank">Instagram</a></li>
+          <li><a href="https://www.instagram.com/mogyamojya/" target="_blank" class="flowbtn10"><i class="fab fa-instagram"></i></a></li>
         </ul>
       </div>
-      <p class="copyright"><small>© mogyamojya All rights reserved.</small></p>
+      <p class="copyright"><small>© AkaneToda All rights reserved.</small></p>
     </footer>
     <script src="./assets/js/main.bundle.js" charset="utf-8"></script>
   </body>
