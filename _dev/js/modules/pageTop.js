@@ -6,7 +6,7 @@ export default class PageTop {
   addEvent() {
     this.$pageTopBtn.addEventListener('click', (e) =>{
       e.preventDefault();
-      window.scroll({
+      window.scrollTo({
         top: 0,
         behavior: 'smooth',
       });
