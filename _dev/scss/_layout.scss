@@ -9,6 +9,8 @@ body{
   font-family: 'Muli', sans-serif;
   font-weight: normal;
   letter-spacing: 0.1em;
+  -webkit-overflow-scrolling: touch;
+  height: auto;
 }
 img{
   width: 100%;
