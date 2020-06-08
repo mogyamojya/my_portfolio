@@ -1,15 +1,15 @@
 export default class PageTop {
-  constructor($pageTopBtn) {
+  constructor($target, $pageTopBtn) {
+    this.$target = document.querySelector(`${$target}`);
     this.$pageTopBtn = document.querySelector(`${$pageTopBtn}`);
-    //this.$window = document.getElementsByTagName('html');
     this.addEvent();
   }
   addEvent() {
     this.$pageTopBtn.addEventListener('click', (e) =>{
       e.preventDefault();
-      window.scroll({
-        top: top,
-        behavior: 'smooth',
+      velocity(this.$target, 'scroll', {
+        duration: 800,
+        easing: [250, 30]
       });
     })
   }

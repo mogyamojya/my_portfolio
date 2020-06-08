@@ -14,7 +14,7 @@ module.exports = {
     new webpack.ProvidePlugin({
       $: 'jquery',
       jQuery: 'jquery',
-      Velocity: 'velocity-animate'
+      velocity: 'velocity-animate'
     })
   ],
   module: {
