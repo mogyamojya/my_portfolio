@@ -83,6 +83,11 @@ img{
           color: #000;
           padding: get_vw(10) 0;
           display: block;
+          opacity: 1;
+          &:hover{
+            opacity: .3;
+            transition: .5s;
+          }
           @media (min-width: 835px){
             padding: 0;
             transition: all;
@@ -104,10 +109,10 @@ img{
 .kv{
   background: gray;
   width: 100%;
-  height: auto;
-  @media (min-width: 835px){
-    height: 300px;
-  }
+  // height: auto;
+  // @media (min-width: 835px){
+  //   height: auto;
+  // }
 }
 .section{
   h2{
@@ -118,7 +123,7 @@ img{
     @include fz_vw(36);
     padding: get_vw(30) 0;
     @media (min-width: 835px){
-      font-size: 24px;
+      font-size: 36px;
     }
   }
 }
@@ -128,11 +133,18 @@ img{
     line-height: 1.5;
     text-align: center;
     padding: 0 get_vw(30);
+    @media (min-width: 835px){
+      font-size: 14px;
+      padding: 0 30px;
+    }
     &.profile{
       @include fz_vw(24);
       margin-top: get_vw(30);
       strong{
         font-weight: bold;
+      }
+      @media (min-width: 835px){
+        font-size: 14px;
       }
     }
   }
@@ -162,12 +174,22 @@ img{
 .section2{
   margin-top: get_vw(100);
   text-align: center;
+  @media (min-width: 835px){
+    margin-top: 100px;
+  }
   p{
     margin: 0 get_vw(30);
     line-height: 1.5;
     @include fz_vw(28);
     span{
       @include fz_vw(24);
+      @media (min-width: 835px){
+        font-size: 12px;
+      }
+    }
+    @media (min-width: 835px){
+      margin: 0 30px;
+      font-size: 14px;
     }
   }
   .img{
@@ -179,6 +201,12 @@ img{
     align-items: center;
     justify-content: center;
     color: #fff;
+    @include fz_vw(80);
+    @media (min-width: 835px){
+      width: 100%;
+      height: 200px;
+      font-size: 80px;
+    }
   }
   .box{
     margin-top: get_vw(60);
@@ -187,12 +215,30 @@ img{
       dt{
         line-height: 1.5;
         @include fz_vw(28);
-        margin: get_vw(5) 0 get_vw(20);
+        margin: get_vw(20) 0 get_vw(30);
+        @media (min-width: 835px){
+          font-size: 16px;
+          margin: 20px 0 20px;
+        }
       }
       dd{
         line-height: 1.5;
         text-align: left;
         @include fz_vw(24);
+        @media (min-width: 835px){
+          font-size: 12px;
+        }
+        .link{
+          margin-bottom: 10px;
+          a{
+            color: lightblue;
+            opacity: 1;
+            &:hover{
+              opacity: .3;
+              transition: .5s;
+            }
+          }
+        }
       }
     }
     &.private{
@@ -205,26 +251,34 @@ img{
         border: 1px solid #ccc;
       }
     }
-    a{
-      color: lightblue;
-    }
   }
 }
 .section3{
   margin-top: get_vw(100);
   padding-bottom: get_vw(200);
   text-align: center;
+  @media (min-width: 835px){
+    margin-top: 100px;
+    padding-bottom: 200px;
+  }
 }
 
 .footer{
   background: gray;
   padding: get_vw(20) 0;
   text-align: center;
+  @media (min-width: 835px){
+    padding: 20px 0;
+  }
   .copyright{
     color: #fff;
     @include fz_vw(20);
+    @media (min-width: 835px){
+      font-size: 10px;
+    }
   }
   .pagetop{
+    display: none;
     position: fixed;
     right: get_vw(30);
     bottom: get_vw(100);
@@ -232,6 +286,10 @@ img{
     height: 50px;
     border-radius: 50px;
     background: #ccc;
+    @media (min-width: 835px){
+      right: 30px;
+      bottom: 100px;
+    }
     a{
       display: block;
       width: 50px;
@@ -272,4 +330,14 @@ font-size:38px;
 }
 .flowbtn10 .fa-instagram:hover{
 color:#fff;
+transition: 0.5s;
+}
+
+br{
+  &.sp{
+    display: none;
+      @media (max-width: 835px){
+        display: block;
+      }
+  }
 }

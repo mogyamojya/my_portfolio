@@ -1,10 +1,16 @@
 import '@babel/polyfill';
 
+import MainPaddingTop from './modules/mainPaddingTop';
 import PageTop from './modules/pageTop';
 
-new PageTop('#pagetop', '.pagetop');
 
+// new PageTop('#pagetop', '.pagetop');
+new MainPaddingTop();
+new PageTop();
 
+$(window).resize(function() {
+  new MainPaddingTop();
+});
 
 
 
