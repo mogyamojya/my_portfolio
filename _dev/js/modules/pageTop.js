@@ -25,15 +25,19 @@
         const target = $(href == "#" || href == "" ? 'html' : href);
         const position = target.offset().top - headerHeight;
         $('body,html').animate({scrollTop:position}, speed, 'swing');
+        event.preventDefault(); 
+        event.stopPropagation(); 
     });
 
     const pagetop = $('.pagetop');
     
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 100) {
+    $(window).on('scroll', function () {
+        if ($(this).scrollTop() > 50) {
             pagetop.fadeIn();
+            console.log('フェードイン');
         } else {
             pagetop.fadeOut();
+            console.log('フェードアウト');
         }
     });
 //   }
