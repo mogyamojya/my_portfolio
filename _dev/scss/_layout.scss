@@ -90,7 +90,9 @@ img{
           }
           @media (min-width: 835px){
             padding: 0;
-            transition: all;
+            &:hover{
+              opacity: 1;
+            }
           }
         }
       }
