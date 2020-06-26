@@ -30,9 +30,12 @@
     });
 
     const pagetop = $('.pagetop');
-    
+    let winSclollTop = 0;
+    let startPosition = window.innerHeight;
+    console.log(startPosition);
     $(window).on('scroll', function () {
-        if ($(this).scrollTop() > 900) {
+        winSclollTop = $(this).scrollTop();
+        if (winSclollTop >= startPosition) {
             pagetop.fadeIn();
             console.log('フェードイン');
         } else {
