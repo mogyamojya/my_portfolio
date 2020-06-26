@@ -11,6 +11,8 @@ body{
   letter-spacing: 0.1em;
   -webkit-overflow-scrolling: touch;
   height: auto;
+  padding-bottom: constant(safe-area-inset-bottom);
+  padding-bottom: env(safe-area-inset-bottom);
 }
 img{
   width: 100%;
