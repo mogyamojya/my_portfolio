@@ -32,7 +32,7 @@
     const pagetop = $('.pagetop');
     
     $(window).on('scroll', function () {
-        if ($(this).scrollTop() > 50) {
+        if ($(this).scrollTop() > 900) {
             pagetop.fadeIn();
             console.log('フェードイン');
         } else {
