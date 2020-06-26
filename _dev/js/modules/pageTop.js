@@ -31,7 +31,7 @@
 
     const pagetop = $('.pagetop');
     let winSclollTop = 0;
-    let startPosition = window.innerHeight;
+    let startPosition = 0;
     console.log(startPosition);
     $(window).on('scroll', function () {
         winSclollTop = $(this).scrollTop();
