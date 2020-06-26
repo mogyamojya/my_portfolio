@@ -36,10 +36,10 @@ $(function(){
     winSclollTop = $(this).scrollTop();
     if (winSclollTop >= startPosition) {
       pagetop.fadeIn();
-      console.log('フェードイン');
+      // console.log('フェードイン');
     } else {
       pagetop.fadeOut();
-      console.log('フェードアウト');
+      // console.log('フェードアウト');
     }
   });
 })

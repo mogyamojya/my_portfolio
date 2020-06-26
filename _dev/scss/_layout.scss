@@ -268,6 +268,7 @@ img{
 }
 
 .footer{
+  padding-bottom: constant(safe-area-inset-bottom);
   background: gray;
   padding: get_vw(20) 0;
   text-align: center;
