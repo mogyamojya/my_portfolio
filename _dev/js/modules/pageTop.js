@@ -15,8 +15,8 @@
 //   }
 // }
 
-export default class PageTop {
-  constructor() {
+// export default class PageTop {
+//   constructor() {
     $('a[href^="#"]').click(function() {
         const header = $('.header__wrap');
         const headerHeight = header.height();
@@ -28,6 +28,7 @@ export default class PageTop {
     });
 
     const pagetop = $('.pagetop');
+    
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
             pagetop.fadeIn();
@@ -35,5 +36,5 @@ export default class PageTop {
             pagetop.fadeOut();
         }
     });
-  }
-}
+//   }
+// }

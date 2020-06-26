@@ -90,6 +90,8 @@ img{
           }
           @media (min-width: 835px){
             padding: 0;
+          }
+          @media (max-width: 835px){
             &:hover{
               opacity: 1;
             }

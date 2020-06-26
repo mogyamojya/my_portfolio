@@ -6,7 +6,7 @@ import PageTop from './modules/pageTop';
 
 // new PageTop('#pagetop', '.pagetop');
 new MainPaddingTop();
-new PageTop();
+// new PageTop();
 
 $(window).resize(function() {
   new MainPaddingTop();
