@@ -18,66 +18,70 @@ var ctx = document.getElementById('myChart').getContext('2d');
 	var myChart = new Chart(ctx, {
 	    type: 'horizontalBar',
 	    data: {
-	        labels: ['HTML', 'CSS', 'Sass', 'jQuery', 'JavaScript', 'Gulp', 'Webpack', 'EJS', 'pug', 'PhotoShop', 'Illustrator', 'XD', 'Subversion', 'Git', 'Word', 'Excel', 'PowerPoint', 'Teams', 'Backlog','Redmine', 'Mac', 'Windows'],
+	        labels: ['HTML', 'CSS', 'Sass', 'jQuery', 'JavaScript', 'Gulp', 'Webpack', 'EJS', 'pug', 'PhotoShop', 'Illustrator', 'XD', 'Dreamweaver','VSCode', 'Subversion', 'Git', 'Word', 'Excel', 'PowerPoint', 'Teams', 'Backlog','Redmine', 'Mac', 'Windows'],
 	        datasets: [{
 	            // label: '',
-	            data: [80, 19, 3, 5, 2, 3, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10],
+	            data: [80, 80, 80, 40, 20, 40, 10, 70, 40, 70, 30, 40, 40, 60, 60, 30, 30, 40, 30, 80, 70, 40, 70, 40],
 	            backgroundColor: [
-	                'rgba(255, 99, 132, 0.2)',
-	                'rgba(54, 162, 235, 0.2)',
-	                'rgba(255, 206, 86, 0.2)',
-	                'rgba(75, 192, 192, 0.2)',
-	                'rgba(153, 102, 255, 0.2)',
-	                'rgba(255, 159, 64, 0.2)',
-	                'rgba(255, 99, 132, 0.2)',
-	                'rgba(54, 162, 235, 0.2)',
-	                'rgba(255, 206, 86, 0.2)',
-	                'rgba(75, 192, 192, 0.2)',
-	                'rgba(153, 102, 255, 0.2)',
-	                'rgba(255, 159, 64, 0.2)',
-	                'rgba(153, 102, 255, 0.2)',
-	                'rgba(255, 159, 64, 0.2)',
-                  'rgba(255, 159, 64, 0.2)',
-                  'rgba(255, 159, 64, 0.2)',
-                  'rgba(255, 159, 64, 0.2)',
-                  'rgba(255, 159, 64, 0.2)',
-                  'rgba(255, 159, 64, 0.2)',
-                  'rgba(255, 159, 64, 0.2)',
-                  'rgba(255, 159, 64, 0.2)',
-                  'rgba(255, 159, 64, 0.2)'
+	                'rgba(255, 20, 147, 0.2)',
+	                'rgba(255, 20, 147, 0.2)',
+	                'rgba(255, 20, 147, 0.2)',
+	                'rgba(255, 20, 147, 0.2)',
+	                'rgba(255, 20, 147, 0.2)',
+	                'rgba(255, 20, 147, 0.2)',
+	                'rgba(255, 20, 147, 0.2)',
+	                'rgba(255, 20, 147, 0.2)',
+	                'rgba(255, 20, 147, 0.2)',
+	                'rgba(255, 20, 147, 0.2)',
+	                'rgba(255, 20, 147, 0.2)',
+	                'rgba(255, 20, 147, 0.2)',
+	                'rgba(255, 20, 147, 0.2)',
+	                'rgba(255, 20, 147, 0.2)',
+                  'rgba(255, 20, 147, 0.2)',
+                  'rgba(255, 20, 147, 0.2)',
+                  'rgba(255, 20, 147, 0.2)',
+                  'rgba(255, 20, 147, 0.2)',
+                  'rgba(255, 20, 147, 0.2)',
+                  'rgba(255, 20, 147, 0.2)',
+                  'rgba(255, 20, 147, 0.2)',
+                  'rgba(255, 20, 147, 0.2)',
+                  'rgba(255, 20, 147, 0.2)',
+                  'rgba(255, 20, 147, 0.2)'
 	            ],
 	            borderColor: [
 	                'rgba(255, 99, 132, 1)',
-	                'rgba(54, 162, 235, 1)',
-	                'rgba(255, 206, 86, 1)',
-	                'rgba(75, 192, 192, 1)',
-	                'rgba(153, 102, 255, 1)',
-	                'rgba(255, 159, 64, 1)',
 	                'rgba(255, 99, 132, 1)',
-	                'rgba(54, 162, 235, 1)',
-	                'rgba(255, 206, 86, 1)',
-	                'rgba(75, 192, 192, 1)',
-	                'rgba(153, 102, 255, 1)',
-	                'rgba(255, 159, 64, 1)',
-	                'rgba(153, 102, 255, 1)',
-	                'rgba(255, 159, 64, 1)',
-                  'rgba(255, 159, 64, 1)',
-                  'rgba(255, 159, 64, 1)',
-                  'rgba(255, 159, 64, 1)',
-                  'rgba(255, 159, 64, 1)',
-                  'rgba(255, 159, 64, 1)',
-                  'rgba(255, 159, 64, 1)',
-                  'rgba(255, 159, 64, 1)',
-                  'rgba(255, 159, 64, 1)'
+	                'rgba(255, 99, 132, 1)',
+	                'rgba(255, 99, 132, 1)',
+	                'rgba(255, 99, 132, 1)',
+	                'rgba(255, 99, 132, 1)',
+	                'rgba(255, 99, 132, 1)',
+	                'rgba(255, 99, 132, 1)',
+	                'rgba(255, 99, 132, 1)',
+	                'rgba(255, 99, 132, 1)',
+	                'rgba(255, 99, 132, 1)',
+	                'rgba(255, 99, 132, 1)',
+	                'rgba(255, 99, 132, 1)',
+	                'rgba(255, 99, 132, 1)',
+                  'rgba(255, 99, 132, 1)',
+                  'rgba(255, 99, 132, 1)',
+                  'rgba(255, 99, 132, 1)',
+                  'rgba(255, 99, 132, 1)',
+                  'rgba(255, 99, 132, 1)',
+                  'rgba(255, 99, 132, 1)',
+                  'rgba(255, 99, 132, 1)',
+                  'rgba(255, 99, 132, 1)',
+                  'rgba(255, 99, 132, 1)',
+                  'rgba(255, 99, 132, 1)'
 	            ],
 	            borderWidth: 1
 	        }]
 	    },
 	    options: {
           title: {
-              display: true,
+              display: false,
               fontSize: 18,
-              text: 'タイトル'
+              text: '使用経験のある言語、ツール、OSなど'
           },
           legend: {
           // true or faise で切り替え
@@ -86,7 +90,9 @@ var ctx = document.getElementById('myChart').getContext('2d');
 	        scales: {
 	            yAxes: [{
 	                ticks: {
-	                    beginAtZero: true
+	                    beginAtZero: true,
+                      min: 0,
+                      max: 100
 	                }
 	            }]
 	        }

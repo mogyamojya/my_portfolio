@@ -10,6 +10,7 @@ body{
   font-weight: normal;
   letter-spacing: 0.1em;
   -webkit-overflow-scrolling: touch;
+  -webkit-font-smoothing: antialiased;
   height: auto;
   padding-bottom: constant(safe-area-inset-bottom);
   padding-bottom: env(safe-area-inset-bottom);
@@ -115,10 +116,6 @@ img{
 .kv{
   background: gray;
   width: 100%;
-  // height: auto;
-  // @media (min-width: 835px){
-  //   height: auto;
-  // }
 }
 .section{
   h2{
@@ -135,23 +132,13 @@ img{
 }
 .section1{
   p{
-    @include fz_vw(28);
+    @include fz_vw(24);
     line-height: 1.5;
     text-align: center;
     padding: 0 get_vw(30);
     @media (min-width: 835px){
       font-size: 14px;
       padding: 0 30px;
-    }
-    &.profile{
-      @include fz_vw(24);
-      margin-top: get_vw(30);
-      strong{
-        font-weight: bold;
-      }
-      @media (min-width: 835px){
-        font-size: 14px;
-      }
     }
   }
   dl{
@@ -176,6 +163,28 @@ img{
       padding: 0 0 get_vw(10);
     }
   }
+  .profile-box{
+    background: #f5f5f5;
+    padding: get_vw(30) 0;
+    margin: get_vw(60) get_vw(60) 0;
+    @media (min-width: 835px){
+      padding: 30px 0;
+      margin: 60px 200px 0;
+    }
+    .profile{
+      @include fz_vw(10);
+      strong{
+        font-weight: bold;
+        @include fz_vw(24);
+        @media (min-width: 835px){
+          font-size: 20px;
+        }
+      }
+      @media (min-width: 835px){
+        font-size: 14px;
+      }
+    }
+  }
 }
 .section2{
   margin-top: get_vw(100);
@@ -186,9 +195,9 @@ img{
   p{
     margin: 0 get_vw(30);
     line-height: 1.5;
-    @include fz_vw(28);
+    @include fz_vw(24);
     span{
-      @include fz_vw(24);
+      @include fz_vw(20);
       @media (min-width: 835px){
         font-size: 12px;
       }
@@ -217,10 +226,13 @@ img{
   .box{
     margin-top: get_vw(60);
     padding: 0 get_vw(30);
+    @media (min-width: 835px){
+      margin-top: 60px;
+    }
     dl{
       dt{
         line-height: 1.5;
-        @include fz_vw(28);
+        @include fz_vw(24);
         margin: get_vw(20) 0 get_vw(30);
         @media (min-width: 835px){
           font-size: 16px;
@@ -230,7 +242,7 @@ img{
       dd{
         line-height: 1.5;
         text-align: left;
-        @include fz_vw(24);
+        @include fz_vw(20);
         @media (min-width: 835px){
           font-size: 12px;
         }
@@ -248,6 +260,7 @@ img{
       }
     }
     &.private{
+      margin-top: get_vw(50);
       dd{
         text-align: center;
       }
@@ -256,6 +269,14 @@ img{
         display: block;
         border: 1px solid #ccc;
       }
+    }
+  }
+  .private-title{
+    @include fz_vw(20);
+    margin-top: get_vw(100);
+    @media (min-width: 835px){
+      font-size: 20px;
+      margin-top: 100px;
     }
   }
 }
@@ -289,7 +310,7 @@ img{
     display: none;
     position: fixed;
     right: get_vw(30);
-    bottom: get_vw(100);
+    bottom: get_vw(30);
     width: 50px;
     height: 50px;
     border-radius: 50px;
@@ -351,9 +372,31 @@ br{
 }
 
 .chart-box{
-  width: get_vw(600);
-  margin: 0 auto;
+  margin: get_vw(60) auto 0;
   @media (min-width: 835px){
-    width: 600px;
+    margin: 60px auto 0;
+  }
+  &__wrap{
+    width: get_vw(600);
+    margin: 0 auto;
+    @media (min-width: 835px){
+      width: 400px;
+    }
+  }
+  &__title{
+    @include fz_vw(20);
+    margin: 0 0 get_vw(20);
+    @media (min-width: 835px){
+      font-size: 20px;
+      margin: 0 0 20px;
+    }
+  }
+  & > &__text{
+    @include fz_vw(10);
+    margin: 0 0 get_vw(20);
+    @media (min-width: 835px){
+      font-size: 10px;
+      margin: 0 0 20px;
+    }
   }
 }
