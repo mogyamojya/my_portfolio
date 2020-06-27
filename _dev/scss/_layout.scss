@@ -349,3 +349,11 @@ br{
       }
   }
 }
+
+.chart-box{
+  width: get_vw(600);
+  margin: 0 auto;
+  @media (min-width: 835px){
+    width: 500px;
+  }
+}
